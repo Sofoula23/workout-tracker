@@ -1,6 +1,7 @@
 const express = require("express");
 const logger = require("morgan");
 const Mongoose = require("mongoose");
+const bodyParser = require('body-parser');
 
 const PORT =3002;
 const app = express();
@@ -14,7 +15,7 @@ Mongoose.connect("mongodb://localhost/workout", {
     useNewUrlParser: true,
     useFindAndModify: false
   });
-
+app.use(bodyParser.json())
 app.use(require("./routes/htmlRoutes"))
 app.use(require("./routes/apiRoutes"))
 app.listen(PORT, () => {
