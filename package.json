@@ -1,20 +1,27 @@
 {
-  "name": "Develop",
+  "name": "workout-tracker",
   "version": "1.0.0",
-  "description": "",
+  "description": "![Workout](./assets/lastworkout.png)",
   "main": "server.js",
   "dependencies": {
-    "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "mongoose": "^5.11.16",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "mongoose": "^5.11.16"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node ./Develop/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sofoula23/workout-tracker.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sofoula23/workout-tracker/issues"
+  },
+  "homepage": "https://github.com/Sofoula23/workout-tracker#readme"
 }
